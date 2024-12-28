@@ -25,16 +25,11 @@ const nextConfig = {
     return [
       {
         "source": "/twitter",
-<<<<<<< HEAD
         "destination": "https://x.com/pfx95",
-=======
-        "destination": "https://x.com/thecalicastle",
->>>>>>> origin/main
         "permanent": true
       },
       {
         "source": "/x",
-<<<<<<< HEAD
         "destination": "https://x.com/pfx95",
         "permanent": true
       },
@@ -63,36 +58,6 @@ const nextConfig = {
       //   "destination": "https://space.bilibili.com/8350251",
       //   "permanent": true
       // }
-=======
-        "destination": "https://x.com/thecalicastle",
-        "permanent": true
-      },
-      {
-        "source": "/youtube",
-        "destination": "https://youtube.com/@calicastle",
-        "permanent": true
-      },
-      {
-        "source": "/tg",
-        "destination": "https://t.me/cali_so",
-        "permanent": true
-      },
-      {
-        "source": "/linkedin",
-        "destination": "https://www.linkedin.com/in/calicastle/",
-        "permanent": true
-      },
-      {
-        "source": "/github",
-        "destination": "https://github.com/CaliCastle",
-        "permanent": true
-      },
-      {
-        "source": "/bilibili",
-        "destination": "https://space.bilibili.com/8350251",
-        "permanent": true
-      }
->>>>>>> origin/main
     ]
   },
 

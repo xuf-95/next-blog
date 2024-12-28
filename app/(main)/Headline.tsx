@@ -49,7 +49,6 @@ function Founder() {
   )
 }
 
-<<<<<<< HEAD
 // export function Headline() {
 //   return (
 //     <div className="max-w-2xl">
@@ -185,46 +184,6 @@ export function Headline() {
         </motion.p>
 
         <motion.div
-=======
-export function Headline() {
-  return (
-    <div className="max-w-2xl">
-      <motion.h1
-        className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          type: 'spring',
-          damping: 25,
-          stiffness: 100,
-          duration: 0.3,
-        }}
-      >
-        <Developer />，<Designer />，
-        <span className="block h-2" />
-        <OCD />，<Founder />
-      </motion.h1>
-      <motion.p
-        className="mt-6 text-base text-zinc-600 dark:text-zinc-400"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          type: 'spring',
-          damping: 30,
-          stiffness: 85,
-          duration: 0.3,
-          delay: 0.1,
-        }}
-      >
-        <Balancer>
-          我是 XuFei，
-          <PeekabooLink href="https://zolplay.com">佐玩</PeekabooLink>
-          创始人，目前带领着佐玩致力于创造一个充满创造力的工作环境，同时鼓励团队创造影响世界的产品。
-          我热爱开发，设计，创新，享受生活，以及在未知领域中探索。
-        </Balancer>
-      </motion.p>
-      <motion.div
->>>>>>> origin/main
         className="mt-6 flex gap-6"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -237,7 +196,6 @@ export function Headline() {
         }}
       >
         <SocialLink
-<<<<<<< HEAD
           href="https://x.com/pfx95"
           aria-label="推特"
           platform="twitter"
@@ -255,30 +213,10 @@ export function Headline() {
         <SocialLink
           href="https://github.com/xuf-95"
           aria-label="GitHub"
-=======
-          href="https://cali.so/twitter"
-          aria-label="我的推特"
-          platform="twitter"
-        />
-        <SocialLink
-          href="https://cali.so/youtube"
-          aria-label="我的 YouTube"
-          platform="youtube"
-        />
-        <SocialLink
-          href="https://cali.so/bilibili"
-          aria-label="我的 Bilibili"
-          platform="bilibili"
-        />
-        <SocialLink
-          href="https://cali.so/github"
-          aria-label="我的 GitHub"
->>>>>>> origin/main
           platform="github"
         />
         <SocialLink
           href="https://cali.so/tg"
-<<<<<<< HEAD
           aria-label="Telegram"
           platform="telegram"
         />
@@ -290,27 +228,13 @@ export function Headline() {
         <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" />
         <SocialLink
           href="sherlock.xpf@gmail.com"
-=======
-          aria-label="我的 Telegram"
-          platform="telegram"
-        />
-        <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" />
-        <SocialLink
-          href="mailto:hi@cali.so"
->>>>>>> origin/main
           aria-label="我的邮箱"
           platform="mail"
         />
       </motion.div>
-<<<<<<< HEAD
       </div>
     </div>
   );
 };
 
 export default Headline;
-=======
-    </div>
-  )
-}
->>>>>>> origin/main
