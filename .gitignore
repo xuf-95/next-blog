@@ -36,6 +36,12 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+<<<<<<< HEAD
+=======
+# vs code
+.vscode
+
+>>>>>>> origin/main
 # turbo
 .turbo
 
@@ -43,6 +49,7 @@ static/
 
 .react-email/
 /.idea
+<<<<<<< HEAD
 
 # Sanity
 /dist
@@ -50,3 +57,5 @@ static/
 # IDE
 .idea
 .vscode
+=======
+>>>>>>> origin/main

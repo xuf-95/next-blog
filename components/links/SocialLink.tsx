@@ -12,7 +12,10 @@ import {
   MailIcon,
   TelegramIcon,
   TwitterIcon,
+<<<<<<< HEAD
   XIcon,
+=======
+>>>>>>> origin/main
   YouTubeIcon,
 } from '~/assets'
 import { Tooltip } from '~/components/ui/Tooltip'
