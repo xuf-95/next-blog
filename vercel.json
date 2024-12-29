@@ -1,5 +1,7 @@
 {
   "buildCommand": "pnpm turbo build",
+  "installCommand": "pnpm install --no-frozen-lockfile",
+  "framework": "nextjs",
   "github": {
     "silent": true
   }
