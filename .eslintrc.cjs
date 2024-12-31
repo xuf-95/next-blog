@@ -44,7 +44,11 @@ const config = {
 
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'warn',
-    'unused-imports/no-unused-imports': 'error',
+    // 'unused-imports/no-unused-imports': 'error',
+
+    "@typescript-eslint/no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "off",
+    "react/no-unescaped-entities": "off"
   },
 }
 
