@@ -12,7 +12,6 @@ import {
   MailIcon,
   TelegramIcon,
   TwitterIcon,
-  XIcon,
   YouTubeIcon,
 } from '~/assets'
 import { Tooltip } from '~/components/ui/Tooltip'
