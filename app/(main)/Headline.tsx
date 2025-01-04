@@ -17,19 +17,19 @@ import { SocialLink } from '~/components/links/SocialLink'
 //   )
 // }
 
-// function Designer() {
-//   return (
-//     <span className="group relative bg-black/5 p-1 dark:bg-white/5">
-//       <span className="pointer-events-none absolute inset-0 border border-lime-700/90 opacity-70 group-hover:border-dashed group-hover:opacity-100 dark:border-lime-400/90">
-//         <span className="absolute -left-[3.5px] -top-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
-//         <span className="absolute -bottom-[3.5px] -right-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
-//         <span className="absolute -bottom-[3.5px] -left-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
-//         <span className="absolute -right-[3.5px] -top-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
-//       </span>
-//       数据工程师
-//     </span>
-//   )
-// }
+function Designer() {
+  return (
+    <span className="group relative bg-black/5 p-1 dark:bg-white/5">
+      <span className="pointer-events-none absolute inset-0 border border-lime-700/90 opacity-70 group-hover:border-dashed group-hover:opacity-100 dark:border-lime-400/90">
+        <span className="absolute -left-[3.5px] -top-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
+        <span className="absolute -bottom-[3.5px] -right-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
+        <span className="absolute -bottom-[3.5px] -left-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
+        <span className="absolute -right-[3.5px] -top-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
+      </span>
+      Building in Public
+    </span>
+  )
+}
 
 // function OCD() {
 //   return (
@@ -145,14 +145,15 @@ export function Headline() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <motion.span className="inline-block">Hey there, I'm <br /> </motion.span>
+          <motion.span className="inline-block">Hey there, I&apos;m </motion.span>
+          <span className="block h-2" />
           <motion.span 
             className="inline-block ml-2 bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-500 text-transparent bg-clip-text"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
           >
-            <br /> XuFei
+            XuFei 许飛
           </motion.span>
           <motion.span 
             className="inline-block"
@@ -160,7 +161,7 @@ export function Headline() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.6, duration: 0.5 }}
           >
-            👋
+            
           </motion.span>
         </motion.h1>
 
@@ -171,7 +172,7 @@ export function Headline() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
         >
-          数据工程师，目前我正在做数字游民，旅居大理，正在学习和寻找远程工作的机会。
+          数据工程师，开发者，数字游民，常居大理。目前处于个人职业探索（一人公司）阶段，寻求合作
         </motion.p>
         
         <motion.p 
@@ -180,7 +181,8 @@ export function Headline() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.5 }}
         >
-          我热爱开发，设计，创新，享受生活，以及在未知领域中探索。
+          我热爱旅行，骑行，享受生活，Building In Public。
+          <Designer />
         </motion.p>
 
         <motion.div
