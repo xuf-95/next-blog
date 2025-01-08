@@ -23,5 +23,7 @@ Cali 的个人博客网站 [https://cali.so/](https://cali.so/) 的源代码。
 ### 变更日志
 
 2025/01/02：first deploy verbal 
+
 2024/12/10：clone project and init blog
+
 2024/11/11：lose hugo blowfish theme blog 
