@@ -156,7 +156,7 @@ export async function Footer() {
                   <li><Link href="/about" className="text-lime-400 hover:text-lime-600 transition-colors">About</Link></li>
                   <li><Link href="/blogs" className="text-lime-400 hover:text-lime-600 transition-colors">Blogs</Link></li>
                   <li><Link href="/projects" className="text-lime-400 hover:text-lime-600 transition-colors">Projects</Link></li>
-                  <li><Link href="/snippets" className="text-lime-400 hover:text-lime-600 transition-colors">Snippets</Link></li>
+                  {/* <li><Link href="/snippets" className="text-lime-400 hover:text-lime-600 transition-colors">Snippets</Link></li> */}
                 </ul>
               </div>
 
@@ -168,7 +168,7 @@ export async function Footer() {
                 <ul className="space-y-2">
                   <li><Link href="/sponsors" className="text-lime-400 hover:text-lime-600 transition-colors">Sponsors</Link></li>
                   <li><Link href="/journey" className="text-lime-400 hover:text-lime-600 transition-colors">My Journey</Link></li>
-                  <li><Link href="/hire-me" className="text-lime-400 hover:text-lime-600 transition-colors">Hire me</Link></li>
+                  {/* <li><Link href="/hire-me" className="text-lime-400 hover:text-lime-600 transition-colors">Hire me</Link></li> */}
                   <li><Link href="/resume" className="text-lime-400 hover:text-lime-600 transition-colors">Resume</Link></li>
                   <li><Link href="/newsletter" className="text-lime-400 hover:text-lime-600 transition-colors">Newsletter</Link></li>
                 </ul>
@@ -183,7 +183,7 @@ export async function Footer() {
             {/* 底部版权信息和链接 */}
             <div className="mt-16 flex flex-col items-center justify-between gap-6 sm:flex-row">
               <p className="text-sm text-zinc-500/80 dark:text-zinc-400/80">
-                &copy; {new Date().getFullYear()} 网站基于 Cali Castle. 已开源：
+                &copy; {new Date().getFullYear()} 网站基于 Cali Castle：
                 <PeekabooLink href="https://github.com/CaliCastle/cali.so">
                   GitHub
                 </PeekabooLink>

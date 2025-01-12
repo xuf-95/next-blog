@@ -172,7 +172,7 @@ export function Headline() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
         >
-          数据工程师，开发者，数字游民，常居大理。目前处于个人职业探索（一人公司）阶段，寻求合作
+          数据工程师，开发者，数字游民探索者。目前处于个人职业探索（一人公司）阶段，寻求合作
         </motion.p>
         
         <motion.p 
@@ -181,7 +181,7 @@ export function Headline() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.5 }}
         >
-          我热爱旅行，骑行，享受生活，Building In Public。
+          我热爱旅行，骑行，享受生活，
           <Designer />
         </motion.p>
 
