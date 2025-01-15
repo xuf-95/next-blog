@@ -84,6 +84,66 @@ export default defineType({
         },
       ],
     }),
+    defineField({
+      name: 'education',
+      title: '教育',
+      description: '在主页侧边栏展示的学校信息（留空就不展示）',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'school',
+              title: '学校名称',
+              type: 'string',
+              validation: (Rule) => Rule.required(),
+            }),
+            defineField({
+              name: 'major',
+              title: '专业',
+              type: 'string',
+              validation: (Rule) => Rule.required(),
+            }),
+            defineField({
+              name: 'logo',
+              title: '学校 Logo',
+              description: '建议尺寸 100x100px 正方形裁切',
+              type: 'image',
+              options: {
+                hotspot: true,
+              },
+              validation: (Rule) => Rule.required(),
+            }),
+            defineField({
+              name: 'start',
+              title: '开始时间',
+              type: 'string',
+              validation: (Rule) => Rule.required(),
+            }),
+            defineField({
+              name: 'end',
+              title: '结束时间（留空会显示“至今”）',
+              type: 'string',
+            }),
+          ],
+          preview: {
+            select: {
+              company: 'school',
+              title: 'major',
+              logo: 'logo',
+              start: 'start',
+              end: 'end',
+            },
+            prepare: (selection) => ({
+              title: `${selection.school} - ${selection.title}`,
+              subtitle: `${selection.start} - ${selection.end ?? '至今'}`,
+              media: selection.logo,
+            }),
+          },
+        },
+      ],
+    }),
   ],
 
   preview: {

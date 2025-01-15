@@ -5,6 +5,7 @@ import { Headline } from '~/app/(main)/Headline'
 // import { Newsletter } from '~/app/(main)/Newsletter'
 import { Photos } from '~/app/(main)/Photos'
 import { Resume } from '~/app/(main)/Resume'
+import { Education } from '~/app/(main)/Education'
 import { PencilSwooshIcon } from '~/assets'
 import { Container } from '~/components/ui/Container'
 import { getSettings } from '~/sanity/queries'
@@ -32,6 +33,7 @@ export default async function BlogHomePage() {
           <aside className="space-y-10 lg:sticky lg:top-8 lg:h-fit lg:pl-16 xl:pl-20">
             {/* <Newsletter /> */}
             {settings?.resume && <Resume resume={settings.resume} />}
+            {settings?.education && <Education education={settings.education} />}
           </aside>
         </div>
       </Container>

@@ -116,6 +116,13 @@ export const getSettingsQuery = () =>
       start,
       end,
       "logo": logo.asset->url
+    },
+    "education": education[]{
+      school,
+      major,
+      start,
+      end,
+      "logo": logo.asset->url
     }
 }`
 export const getSettings = () =>
@@ -131,4 +138,14 @@ export const getSettings = () =>
           end?: string
         }[]
       | null
+    education?:
+      | {
+          school: string
+          major: string
+          logo: string
+          start: string
+          end?: string
+        }[]
+      | null
+
   }>(getSettingsQuery())
