@@ -146,7 +146,6 @@ export async function Footer() {
         <div className="border-t border-zinc-100 pb-16 pt-10 dark:border-zinc-700/40">
           <Container.Inner>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-4">
-              {/* GENERAL 列 */}
               <div>
                 <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
                   GENERAL
@@ -160,16 +159,15 @@ export async function Footer() {
                 </ul>
               </div>
 
-              {/* SPECIFICS 列 */}
               <div>
                 <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
-                  SPECIFICS
+                  PUBLIC
                 </h2>
                 <ul className="space-y-2">
-                  <li><Link href="/sponsors" className="text-lime-400 hover:text-lime-600 transition-colors">Sponsors</Link></li>
-                  <li><Link href="/journey" className="text-lime-400 hover:text-lime-600 transition-colors">My Journey</Link></li>
+                  <li><Link href="https://bento.me/xfei" className="text-lime-400 hover:text-lime-600 transition-colors">Bento</Link></li>
+                  <li><Link href="https://www.strava.com/athletes/94054931" className="text-lime-400 hover:text-lime-600 transition-colors">Strava</Link></li>
                   {/* <li><Link href="/hire-me" className="text-lime-400 hover:text-lime-600 transition-colors">Hire me</Link></li> */}
-                  <li><Link href="/resume" className="text-lime-400 hover:text-lime-600 transition-colors">Resume</Link></li>
+                  <li><Link href="https://read.cv/xuf" className="text-lime-400 hover:text-lime-600 transition-colors">Read CV</Link></li>
                   <li><Link href="/newsletter" className="text-lime-400 hover:text-lime-600 transition-colors">Newsletter</Link></li>
                 </ul>
               </div>

@@ -25,10 +25,10 @@ export default function ProjectsPage() {
     <Container className="mt-16 sm:mt-32">
       <header className="max-w-2xl">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          关于做过的项目
+          Projects
         </h1>
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          以下是我项目的集合，包括<b>海外交付项目、数字政务项目以及参与的开源项目</b>，还在不在探索。
+          <b>Collections of my open-source side projects, along with some cool things I’ve built with colleagues at work. It’s a mix of passion projects and practical tools—some just for fun, others to solve real-world problems.</b>
         </p>
       </header>
       <div className="mt-16 sm:mt-20">

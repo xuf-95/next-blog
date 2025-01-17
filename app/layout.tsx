@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     url: 'https://xufei.site',
   },
   twitter: {
-    site: '@thecalicastle',
-    creator: '@thecalicastle',
+    site: '@pfx95',
+    creator: '@pfx95',
     card: 'summary_large_image',
     title: seo.title,
     description: seo.description,

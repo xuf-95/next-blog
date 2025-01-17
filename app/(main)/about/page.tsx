@@ -1,42 +1,73 @@
-
-import React from 'react'
-
-import { BlogPosts } from '~/app/(main)/blog/BlogPosts'
-import { Headline } from '~/app/(main)/Headline'
+// import { Headline } from '~/app/(main)/Headline'
 // import { Newsletter } from '~/app/(main)/Newsletter'
-import { Photos } from '~/app/(main)/Photos'
-import { Resume } from '~/app/(main)/Resume'
-import { PencilSwooshIcon } from '~/assets'
+// import { Photos } from '~/app/(main)/Photos'
 import { Container } from '~/components/ui/Container'
-import { getSettings } from '~/sanity/queries'
+import { aboutMeHeadline, aboutParagraphs } from '~/config/infoConfig'
+import portraitImage from '~/assets/PortraitA.png'
+import Image from 'next/image'
+import  SocialLink  from '~/components/links/iconLinks'
+import { motion } from 'framer-motion'
 
 
-export default async  function AboutPage() {
-  const settings = await getSettings()
+import { type Metadata } from 'next'
 
+export const metadata: Metadata = {
+  title: 'About',
+  description:
+    'I’m XuFei. I live in Hangzhou City, where I design the future.',
+}
+
+
+export default function About() {
+  const aboutParagraphsSafe = aboutParagraphs || [];
   return (
-    <>
-      <Container className="mt-10">
-        <Headline />
-      </Container>
-
-      {settings?.heroPhotos && <Photos photos={settings.heroPhotos} />}
-
-      <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-6 pt-6">
-            <h2 className="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-              <PencilSwooshIcon className="h-5 w-5 flex-none" />
-              <span className="ml-2">近期文章</span>
-            </h2>
-            <BlogPosts />
+    <Container className="mt-16 sm:mt-32">
+      <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+        <div className="lg:pl-20">
+          <div className="max-w-xs px-2.5 lg:max-w-none">
+            <Image
+              src={portraitImage}
+              alt=""
+              sizes="(min-width: 1024px) 32rem, 20rem"
+              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+            />
           </div>
-          <aside className="space-y-10 lg:sticky lg:top-8 lg:h-fit lg:pl-16 xl:pl-20">
-            {/* <Newsletter /> */}
-            {settings?.resume && <Resume resume={settings.resume} />}
-          </aside>
         </div>
-      </Container>
-    </>
+        <div className="lg:order-first lg:row-span-2">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            {aboutMeHeadline}
+          </h1>
+          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            {/* {aboutParagraphs.map((paragraph, index) => (
+               <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
+            ))} */}
+            {aboutParagraphs.map((section, index) => {
+              // 检查类型，如果是对象则渲染标题和内容
+              if (typeof section === "object" && section.title) {
+                return (
+                  <div key={index}>
+                    <h2 className="text-2xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                      {section.title}
+                    </h2>
+                    <p>{section.content}</p>
+                  </div>
+                );
+              }
+
+              // 否则直接渲染段落
+              return (
+                <p
+                  key={index}
+                  dangerouslySetInnerHTML={{ __html: section }}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className="lg:pl-20">
+          <SocialLink />
+        </div>
+      </div>
+    </Container>
   )
 }
