@@ -71,25 +71,25 @@ export function Newsletter({ subCount }: { subCount?: string }) {
   return (
     <form
       className={clsxm(
-        'relative rounded-2xl border border-zinc-100 p-6 transition-opacity dark:border-zinc-700/40',
-        isSubmitting && 'pointer-events-none opacity-70'
+        'relative rounded-2xl border border-zinc-200 p-6 transition-opacity dark:border-zinc-700/40',
+        isSubmitting && 'pointer-events-none opacity-70',
       )}
       onSubmit={handleSubmit(onSubmit)}
     >
       <input type="hidden" className="hidden" {...register('formId')} />
       <h2 className="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <TiltedSendIcon className="h-5 w-5 flex-none" />
-        <span className="ml-2">动态更新</span>
+        <span className="ml-2">Stay up to date</span>
       </h2>
       <p className="mt-2 text-xs text-zinc-600 dark:text-zinc-400 md:text-sm">
-        <span>喜欢我的内容的话不妨订阅支持一下 🫶</span>
-        <br />
-        {subCount && (
+        <span><b>Get notified when I publish something new, and unsubscribe at any time.</b></span>
+        {/* <br /> */}
+        {/* {subCount && (
           <span>
-            加入其他 <span className="font-medium">{subCount}</span> 位订阅者，
+            Join <span className="font-medium">{subCount}</span> other subscribers.
           </span>
-        )}
-        <span>每月一封，随时可以取消订阅。</span>
+        )} */}
+        {/* <span>每月一封，随时可以取消订阅。</span> */}
       </p>
       <AnimatePresence mode="wait">
         {!isSubscribed ? (
@@ -101,7 +101,7 @@ export function Newsletter({ subCount }: { subCount?: string }) {
           >
             <input
               type="email"
-              placeholder="你的邮箱"
+              placeholder="Email Address"
               aria-label="电子邮箱"
               required
               className="min-w-0 flex-auto appearance-none rounded-lg border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] placeholder:text-zinc-400 focus:border-lime-500 focus:outline-none focus:ring-4 focus:ring-lime-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-lime-400/50 dark:focus:ring-lime-400/5 sm:text-sm"
@@ -112,7 +112,7 @@ export function Newsletter({ subCount }: { subCount?: string }) {
               className="ml-2 flex-none"
               disabled={isSubmitting}
             >
-              订阅
+              Subscribe
             </Button>
           </motion.div>
         ) : (
@@ -126,6 +126,16 @@ export function Newsletter({ subCount }: { subCount?: string }) {
           </motion.p>
         )}
       </AnimatePresence>
+      <p className="mt-2 text-xs text-zinc-600 dark:text-zinc-400 md:text-sm">
+        {/* <span><b>Get notified when I publish something new, and unsubscribe at any time.</b></span> */}
+        {/* <br /> */}
+        {subCount && (
+          <span>
+            <b>Join</b> <span className="font-medium">{subCount}</span> <b>other subscribers.</b>
+          </span>
+        )}
+        {/* <span>每月一封，随时可以取消订阅。</span> */}
+      </p>
       <span id="newsletter-rewards" className="relative h-0 w-0" />
       {errors.email && (
         <p className="mt-2 text-xs font-medium text-red-600 dark:text-red-400">

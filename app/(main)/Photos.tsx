@@ -3,11 +3,20 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
+import Slider from 'react-slick'
 
 export function Photos({ photos }: { photos: string[] }) {
   const [width, setWidth] = React.useState(0)
   const [isCompact, setIsCompact] = React.useState(false)
   const expandedWidth = React.useMemo(() => width * 1.38, [width])
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   React.useEffect(() => {
     const handleResize = () => {

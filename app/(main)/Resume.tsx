@@ -16,7 +16,7 @@ export function Resume({ resume }: { resume: Resume[] }) {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-5 w-5 flex-none" />
-        <span className="ml-2">工作经历</span>
+        <span className="ml-2"><b>Works</b></span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
@@ -58,7 +58,7 @@ export function Resume({ resume }: { resume: Resume[] }) {
           // className="inline-flex items-center justify-center rounded-lg bg-gray-700 px-32 py-2 text-sm font-medium text-white shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 dark:ring-offset-zinc-900"
           className='group mt-6 w-full bg-primary-200 font-medium border border-primary-300 text-zinc-900 hover:bg-primary-300 active:bg-primary-100 active:text-zinc-900/60 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800/70 dark:hover:text-zinc-50 dark:active:bg-zinc-900 dark:active:text-zinc-50/70 dark:border-zinc-800 inline-flex items-center gap-1 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none'
         >
-          Resume
+          <b> ⤓ Doanload CV</b>
         </a>
       </div>
     </div>

@@ -151,10 +151,10 @@ export async function Footer() {
                   GENERAL
                 </h2>
                 <ul className="space-y-2">
-                  <li><Link href="/" className="text-lime-400 hover:text-lime-600 transition-colors">Home</Link></li>
-                  <li><Link href="/about" className="text-lime-400 hover:text-lime-600 transition-colors">About</Link></li>
-                  <li><Link href="/blogs" className="text-lime-400 hover:text-lime-600 transition-colors">Blogs</Link></li>
-                  <li><Link href="/projects" className="text-lime-400 hover:text-lime-600 transition-colors">Projects</Link></li>
+                  <li><Link href="/" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Home</b></Link></li>
+                  <li><Link href="/about" className="text-lime-400 hover:text-lime-600 transition-colors"><b>About</b></Link></li>
+                  <li><Link href="/blogs" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Blogs</b></Link></li>
+                  <li><Link href="/projects" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Projects</b></Link></li>
                   {/* <li><Link href="/snippets" className="text-lime-400 hover:text-lime-600 transition-colors">Snippets</Link></li> */}
                 </ul>
               </div>
@@ -164,11 +164,11 @@ export async function Footer() {
                   PUBLIC
                 </h2>
                 <ul className="space-y-2">
-                  <li><Link href="https://bento.me/xfei" className="text-lime-400 hover:text-lime-600 transition-colors">Bento</Link></li>
-                  <li><Link href="https://www.strava.com/athletes/94054931" className="text-lime-400 hover:text-lime-600 transition-colors">Strava</Link></li>
+                  <li><Link href="https://bento.me/xfei" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Bento</b></Link></li>
+                  <li><Link href="https://www.strava.com/athletes/94054931" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Strava</b></Link></li>
                   {/* <li><Link href="/hire-me" className="text-lime-400 hover:text-lime-600 transition-colors">Hire me</Link></li> */}
-                  <li><Link href="https://read.cv/xuf" className="text-lime-400 hover:text-lime-600 transition-colors">Read CV</Link></li>
-                  <li><Link href="/newsletter" className="text-lime-400 hover:text-lime-600 transition-colors">Newsletter</Link></li>
+                  <li><Link href="https://read.cv/xuf" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Read CV</b></Link></li>
+                  <li><Link href="/newsletter" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Newsletter</b></Link></li>
                 </ul>
               </div>
 
@@ -181,7 +181,7 @@ export async function Footer() {
             {/* 底部版权信息和链接 */}
             <div className="mt-16 flex flex-col items-center justify-between gap-6 sm:flex-row">
               <p className="text-sm text-zinc-500/80 dark:text-zinc-400/80">
-                &copy; {new Date().getFullYear()} 网站基于 Cali Castle：
+                &copy; {new Date().getFullYear()} xufei & 许飛. 网站基于 Cali Castle：
                 <PeekabooLink href="https://github.com/CaliCastle/cali.so">
                   GitHub
                 </PeekabooLink>

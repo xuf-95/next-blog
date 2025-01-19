@@ -27,15 +27,15 @@ export default function BlogPage() {
     <Container className="mt-16 sm:mt-24">
       <header className="max-w-2xl">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          MY BLOGS!
+          Blogs
         </h1>
         <p className="my-6 text-base text-zinc-600 dark:text-zinc-400">
-          <Balancer>{description}</Balancer>
-          {/* <b>Blog columns mainly record related topics of work and life, such as technical precipitation, personal learning, life essays, and so on.</b> */}
+          {/* <Balancer>{description}</Balancer> */}
+          <b>Blog columns mainly record related topics of work and life, such as technical precipitation, personal learning, life essays, and so on.</b>
         </p>
-        <p className="flex items-center">
+        {/* <p className="flex items-center">
           <SocialLink href="/feed.xml" platform="rss" />
-        </p>
+        </p> */}
       </header>
       <div className="mt-12 grid grid-cols-1 gap-6 sm:mt-20 lg:grid-cols-2 lg:gap-8">
         <BlogPosts limit={20} />
