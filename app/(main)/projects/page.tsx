@@ -5,10 +5,10 @@ import { Container } from '~/components/ui/Container'
 
 import { projectHeadLine, projectIntro, projects, githubProjects } from '~/config/infoConfig'
 
-import { ProjectCard } from '~/components/projects/ProjectCard'
-import { GithubProjectCard } from '~/components/projects/GithubProjectCard'
-import { CustomIcon } from '~/components/CustomIcon'
-import GitHubSnake from '~/components/home/GitHubSnake'
+// import { ProjectCard } from '~/components/projects/ProjectCard'
+// import { GithubProjectCard } from '~/components/projects/GithubProjectCard'
+// import { CustomIcon } from '~/components/CustomIcon'
+// import GitHubSnake from '~/components/home/GitHubSnake'
 
 const title = '我的项目'
 const description =
@@ -38,10 +38,10 @@ export default function ProjectsPage() {
           <b>Collections of my open-source side projects, along with some cool things I’ve built with colleagues at work. It’s a mix of passion projects and practical tools—some just for fun, others to solve real-world problems.</b>
         </p>
       </header>
-      <h2 className="mt-6 flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40">
+      {/* <h2 className="mt-6 flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40">
           <CustomIcon name='coffee' size={28}/>
             Work Projects
-       </h2>
+       </h2> */}
       <div className="mt-8 sm:mt-10">
         <Projects />
       </div>
