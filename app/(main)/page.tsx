@@ -10,6 +10,7 @@ import { PencilSwooshIcon } from '~/assets'
 import { Container } from '~/components/ui/Container'
 import { getSettings } from '~/sanity/queries'
 
+
 export default async function BlogHomePage() {
   const settings = await getSettings()
 

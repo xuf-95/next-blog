@@ -14,7 +14,6 @@
 - [Resend](https://resend.com/)
 
 
-
 ## Change Log
 
 2025/01/02：first deploy verbal 

@@ -3,7 +3,7 @@
 import { ArrowRightIcon, HashIcon } from 'lucide-react'
 import Image from 'next/image'
 import { ArrowUpRight } from '@phosphor-icons/react'
-// import { ProjectItemType } from '~/config/infoConfig'
+import { ProjectItemType } from '~/config/infoConfig'
 // import { utm_source } from '~/config/siteConfig'
 import Link from 'next/link'
 
