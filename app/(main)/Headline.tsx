@@ -99,7 +99,7 @@ export function Headline() {
         <SocialLink
           href="https://x.com/pfx95"
           aria-label="推特"
-          platform="twitter"
+          platform="x"
         />
         {/* <SocialLink
           href="https://cali.so/youtube"
@@ -117,7 +117,7 @@ export function Headline() {
           platform="github"
         />
         <SocialLink
-          href="https://cali.so/tg"
+          href="https://t.me/xuf_95"
           aria-label="Telegram"
           platform="telegram"
         />
@@ -126,6 +126,11 @@ export function Headline() {
           aria-label="Instagram"
           platform="instagram"
         /> */}
+        <SocialLink
+          href="https://www.instagram.com/xufei_sherlock/"
+          aria-label="wiki"
+          platform="ufo"
+        />
         <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" />
         <SocialLink
           href="sherlock.xpf@gmail.com"

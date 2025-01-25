@@ -1,9 +1,11 @@
+export * from './projects'
 
 
 export const email = 'sherlock.xpf@gmail.com'
 
 // about page
 export const aboutMeHeadline = "Welcome!"
+export const githubUsername = 'xuf-95'
 
 type AboutSection = 
   | string

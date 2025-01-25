@@ -98,7 +98,7 @@ function Root({ className, blockId }: CommentableProps) {
             behavior: 'smooth',
           })
       }
-    }, 300)
+    }, 1000) // 300ms
   }, [])
 
   const { mutate: createComment, isLoading } = useMutation(

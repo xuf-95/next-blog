@@ -13,6 +13,8 @@ import {
   TelegramIcon,
   TwitterIcon,
   YouTubeIcon,
+  XIcon,
+  UFOIcon
 } from '~/assets'
 import { Tooltip } from '~/components/ui/Tooltip'
 
@@ -20,11 +22,13 @@ type IconType = (props: IconProps) => JSX.Element
 type Platform =
   | 'github'
   | 'twitter'
+  | 'x'
   | 'youtube'
   | 'telegram'
   | 'bilibili'
   | 'mail'
   | 'rss'
+  | 'ufo'
 type PlatformInfo = {
   icon: IconType
   platform: Platform
@@ -36,6 +40,11 @@ const iconMapper: { [key: string]: PlatformInfo } = {
     icon: TwitterIcon,
     platform: 'twitter',
     label: 'Twitter',
+  },
+  '((?:x.co)|(?:x.com))': {
+    icon: XIcon,
+    platform: 'x',
+    label: 'X',
   },
   '((?:youtu.be)|(?:youtube.com))': {
     icon: YouTubeIcon,
@@ -52,6 +61,7 @@ const iconMapper: { [key: string]: PlatformInfo } = {
     platform: 'bilibili',
     label: '哔哩哔哩',
   },
+  '(?:xufei.biz:)': { icon: UFOIcon, platform: 'ufo', label: 'wiki' },
   '(?:mailto:)': { icon: MailIcon, platform: 'mail', label: '邮箱地址' },
   '(?:feed.xml)': { icon: AtomIcon, platform: 'rss', label: 'RSS 订阅' },
 }

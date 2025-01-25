@@ -74,7 +74,7 @@ export function GuestbookFeeds(props: { messages?: GuestbookDto[] }) {
       return data as GuestbookDto[]
     },
     {
-      refetchInterval: 30000,
+      refetchInterval: 30000, 
       initialData: props.messages ?? [],
     }
   )
