@@ -19,7 +19,7 @@ export function PortableTextBlocksNormal({
   return (
     <p
       data-blockid={isEmpty ? undefined : value._key}
-      className="group relative pr-3 md:pr-0"
+      className="group relative pr-3 md:pr-0 leading-loose"
     >
       {!isEmpty && (
         <ClientOnly>
@@ -127,7 +127,7 @@ export function PortableTextBlocksListItem({
   children,
 }: PortableTextComponentProps<any>) {
   return (
-    <li data-blockid={value._key} className="group relative pr-3 md:pr-0">
+    <li data-blockid={value._key} className="group relative pr-3 md:pr-0 leading-loose">
       <ClientOnly>
         <Commentable className="mr-5" blockId={value._key} />
       </ClientOnly>

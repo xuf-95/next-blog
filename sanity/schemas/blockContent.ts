@@ -21,12 +21,6 @@ export default defineType({
     defineArrayMember({
       title: 'Block',
       type: 'block',
-      // Styles let you define what blocks can be marked up as. The default
-      // set corresponds with HTML tags, but you can set any title or value
-      // you want, and decide how you want to deal with it where you want to
-      // use your content.
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
       styles: [
         { title: '正文', value: 'normal' },
         { title: 'H1', value: 'h1' },
@@ -49,6 +43,7 @@ export default defineType({
           { title: '下划线', value: 'underline' },
           { title: '删除线', value: 'strike-through' },
           { title: '代码', value: 'code' },
+          {title:'高亮', value: 'highlighting'}
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [

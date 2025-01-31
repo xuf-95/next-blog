@@ -5,25 +5,33 @@ import Image from 'next/image'
 import React from 'react'
 
 export function Photos({ photos }: { photos: string[] }) {
-  const [width, setWidth] = React.useState(0)
+  const [containerWidth, setContainerWidth] = React.useState(0)
   const [isCompact, setIsCompact] = React.useState(false)
-  const expandedWidth = React.useMemo(() => width * 1.38, [width])
   const [isHovering, setIsHovering] = React.useState(false)
 
-  // 保留原有响应式布局逻辑
+  // 计算单个照片的尺寸（4:3比例）
+  const photoSize = React.useMemo(() => {
+    const aspectRatio = 4 / 2
+    const baseWidth = isCompact ? containerWidth * 0.8 : 420 // 大屏固定400px宽
+    return {
+      width: baseWidth,
+      height: baseWidth / aspectRatio,
+      margin: isCompact ? 8 : 16 // 间距响应式
+    }
+  }, [containerWidth, isCompact])
+
+  // 响应式布局逻辑（优化版）
   React.useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 640) {
-        setIsCompact(true)
-        return setWidth(window.innerWidth / 2 - 64)
-      }
-      setWidth(window.innerWidth / photos.length - 4 * photos.length)
+      const viewportWidth = window.innerWidth
+      setIsCompact(viewportWidth < 640)
+      setContainerWidth(viewportWidth)
     }
 
     window.addEventListener('resize', handleResize)
     handleResize()
     return () => window.removeEventListener('resize', handleResize)
-  }, [photos.length])
+  }, [])
 
   return (
     <motion.div
@@ -42,27 +50,31 @@ export function Photos({ photos }: { photos: string[] }) {
           animate={{ 
             x: ['0%', '-100%'],
             transition: {
-              duration: photos.length * 10, // 数值越大滚动越慢
+              duration: photos.length * 15,
               repeat: Infinity,
               ease: 'linear'
             }
           }}
           style={{ 
             animationPlayState: isHovering ? 'paused' : 'running',
-            width: `${photos.length * 100}%` 
+            width: `${photos.length * (photoSize.width + photoSize.margin * 2)}px` 
           }}
         >
-          {[...photos, ...photos, ...photos, ...photos].map((image, idx) => (
+          {[...photos, ...photos].map((image, idx) => (
             <motion.div
               key={`${image}-${idx}`}
-              className="inline-block px-4"
-              style={{ width: `${width}px` }}
+              className="inline-block"
+              style={{ 
+                width: photoSize.width,
+                height: photoSize.height,
+                margin: `0 ${photoSize.margin}px`
+              }}
               animate={{
-                rotate: idx % 2 === 0 ? 2 : -1 // 保留原有旋转逻辑
+                rotate: idx % 2 === 0 ? 2 : -1
               }}
               whileHover={{
                 scale: 1.05,
-                rotate: 0, // 悬停时回正
+                rotate: 0,
                 transition: { 
                   duration: 0.3,
                   rotate: { type: 'spring', stiffness: 150 }
@@ -76,14 +88,13 @@ export function Photos({ photos }: { photos: string[] }) {
                 }
               }}
             >
-              <div className="relative h-40 overflow-hidden rounded-xl bg-zinc-100 ring-2 ring-lime-800/20 dark:bg-zinc-800 dark:ring-lime-300/10 md:h-72 md:rounded-3xl">
+              <div className="relative w-full h-full overflow-hidden rounded-xl bg-zinc-100 ring-2 ring-lime-800/20 dark:bg-zinc-800 dark:ring-lime-300/10 md:rounded-3xl"> {/**aspect-[4/3] */}
                 <Image
                   src={image}
                   alt=""
-                  width={500}
-                  height={500}
-                  sizes="(min-width: 640px) 18rem, 11rem"
-                  className="absolute inset-0 h-full w-full object-cover"
+                  fill // 使用Next.js的fill布局
+                  sizes="(max-width: 640px) 50vw, 480px"
+                  className="object-cover"
                   style={{
                     filter: isHovering ? 'grayscale(0)' : 'grayscale(0.3)',
                     transition: 'filter 0.3s ease'
