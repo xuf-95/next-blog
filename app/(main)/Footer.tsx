@@ -152,7 +152,7 @@ export async function Footer() {
                 <ul className="space-y-2">
                   <li><Link href="/" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Home</b></Link></li>
                   <li><Link href="/about" className="text-lime-400 hover:text-lime-600 transition-colors"><b>About</b></Link></li>
-                  <li><Link href="/blogs" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Blogs</b></Link></li>
+                  <li><Link href="/blog" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Blogs</b></Link></li>
                   <li><Link href="/projects" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Projects</b></Link></li>
                   {/* <li><Link href="/snippets" className="text-lime-400 hover:text-lime-600 transition-colors">Snippets</Link></li> */}
                 </ul>

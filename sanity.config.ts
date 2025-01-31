@@ -34,4 +34,9 @@ export default defineConfig({
     media(),
     codeInput(),
   ],
+  useCdn: true, // 强制启用 CDN
+  requestTimeout: 30000, // 延长至30秒
+  maxRetries: 3,         // 增加重试次数
+  keepAlive: true        // 启用持久连接
+  
 })

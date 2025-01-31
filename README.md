@@ -26,6 +26,8 @@
 
 2024/12/03:  add about page
 
+2025/01/31：complete photos rotation map
+
 ## Reference 
 
 - [Cali](https://cali.so/)：base in blog template
@@ -33,3 +35,4 @@
 - [tailwindui Template spotlight](https://spotlight.tailwindui.com/): blog template
 
 - [coreychiu](https://coreychiu.com/): github card、github snake
+
