@@ -1,16 +1,20 @@
-// import { Headline } from '~/app/(main)/Headline'
-// import { Newsletter } from '~/app/(main)/Newsletter'
-// import { Photos } from '~/app/(main)/Photos'
+import React from 'react'
+
 import { Container } from '~/components/ui/Container'
 import { aboutMeHeadline, aboutParagraphs } from '~/config/infoConfig'
 import portraitImage from '~/assets/PortraitA.png'
 import Image from 'next/image'
 import  SocialLink  from '~/components/links/iconLinks'
 import { motion } from 'framer-motion'
-
+import {WobbleCardDemo} from './WobbleCardDemo'
+import { Newsletter } from '~/app/(main)/Newsletter'
+import { Resume } from '~/app/(main)/Resume'
+import { Education } from '~/app/(main)/Education'
+import settings from '~/.eslintrc.cjs'
 
 import { type Metadata } from 'next'
 
+import { getSettings } from '~/sanity/queries'
 export const metadata: Metadata = {
   title: 'About',
   description:
@@ -18,8 +22,9 @@ export const metadata: Metadata = {
 }
 
 
-export default function About() {
+export default async function About() {
   const aboutParagraphsSafe = aboutParagraphs || [];
+  const settings = await getSettings()
   return (
     <Container className="mt-16 sm:mt-32">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -32,6 +37,8 @@ export default function About() {
               className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
           </div>
+
+          
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
@@ -66,7 +73,12 @@ export default function About() {
         </div>
         <div className="lg:pl-20">
           <SocialLink />
+          {/* <Newsletter /> */}
         </div>
+        
+      </div>
+      <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
+        {/* <WobbleCardDemo />      */}
       </div>
     </Container>
   )

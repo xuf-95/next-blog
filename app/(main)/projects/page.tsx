@@ -5,6 +5,8 @@ import { Container } from '~/components/ui/Container'
 
 import { projectHeadLine, projectIntro, projects, githubProjects } from '~/config/infoConfig'
 
+// import OrbitingCircles from '~/app/(main)/OrbitingCirclesView'
+
 // import { ProjectCard } from '~/components/projects/ProjectCard'
 // import { GithubProjectCard } from '~/components/projects/GithubProjectCard'
 // import { CustomIcon } from '~/components/CustomIcon'
@@ -60,6 +62,9 @@ export default function ProjectsPage() {
             ))}
           </ul>
         </div> */}
+      {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40">  */}
+        {/* <OrbitingCircles /> */}
+      {/* </div> */}
     </Container>
   )
 }
