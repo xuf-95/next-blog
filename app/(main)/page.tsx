@@ -26,9 +26,9 @@ export default async function BlogHomePage() {
       {settings?.heroPhotos && <Photos photos={settings.heroPhotos} />}
 
       <Container className="mt-12 md:mt-28">
-        {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
+        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
             <WobbleCardDemo />     
-        </div> */}
+        </div>
 
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-6 pt-6">
