@@ -81,7 +81,7 @@ export function Headline() {
         >
           <b>Enjoy cycling, coffee & coding,</b>
           <Designer />
-          <b>, All in AI</b>
+          <b>, DATA + AI</b>
         </motion.p>
 
         <motion.div
