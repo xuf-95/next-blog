@@ -10,7 +10,7 @@ import { PencilSwooshIcon } from '~/assets'
 import { SunIcon } from '~/assets'
 import { Container } from '~/components/ui/Container'
 import { getSettings } from '~/sanity/queries'
-import {WobbleCardDemo} from './about/WobbleCardDemo'
+import {WobbleCardDemo} from '~/components/ui/WobbleCardDemo'
 
 
 

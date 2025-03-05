@@ -47,7 +47,7 @@ var assets_1 = require("~/assets");
 var assets_2 = require("~/assets");
 var Container_1 = require("~/components/ui/Container");
 var queries_1 = require("~/sanity/queries");
-var WobbleCardDemo_1 = require("./about/WobbleCardDemo");
+var WobbleCardDemo_1 = require("~/components/ui/WobbleCardDemo");
 function BlogHomePage() {
     return __awaiter(this, void 0, void 0, function () {
         var settings;
