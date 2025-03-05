@@ -1,5 +1,5 @@
 .prismjs {
-  --tw-prose-pre-bg: rgba(245, 245, 245, .05);
+  --tw-prose-pre-bg: rgba(227, 8, 8, 0.05);
   --tw-prose-pre-code: theme('colors.zinc.600');
   background: linear-gradient(to top, rgba(235, 235, 235, .3) 0%, rgba(255, 255, 255, 0.1) 100%);
   font-size: 12px;
