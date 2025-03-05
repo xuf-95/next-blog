@@ -60,13 +60,13 @@ export default async function About() {
                 );
               }
 
-              // 否则直接渲染段落
-              return (
-                <p
-                  key={index}
-                  dangerouslySetInnerHTML={{ __html: section }}
-                />
-              );
+              // // 否则直接渲染段落
+              // return (
+              //   <p
+              //     key={index}
+              //     dangerouslySetInnerHTML={{ __html: section }}
+              //   />
+              // );
             })}
           </div>
         </div>
