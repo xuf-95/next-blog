@@ -2,6 +2,7 @@ import { type Metadata } from 'next'
 
 import { Projects } from '~/app/(main)/projects/Projects'
 import { Container } from '~/components/ui/Container'
+import CardView from './Card'
 
 import { projectHeadLine, projectIntro, projects, githubProjects } from '~/config/infoConfig'
 
@@ -65,6 +66,10 @@ export default function ProjectsPage() {
       {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40">  */}
         {/* <OrbitingCircles /> */}
       {/* </div> */}
+
+      {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
+          <CardView /> 
+      </div>  */}
     </Container>
   )
 }

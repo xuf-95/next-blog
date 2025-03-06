@@ -15,6 +15,8 @@ import { SunIcon } from '~/assets'
 import { type Metadata } from 'next'
 
 import { getSettings } from '~/sanity/queries'
+
+import CardView from '../projects/Card'
 export const metadata: Metadata = {
   title: 'About',
   description:
@@ -37,17 +39,15 @@ export default async function About() {
               className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
           </div>
-          <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
-                {/* <WobbleCardDemo />      */}
-          </div>
+
           <aside className="space-y-10 lg:sticky lg:top-8 lg:h-fit lg:pl-16 xl:pl-20">
             <div className="flex flex-col gap-6 pt-6">
-              <h2 className="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+              {/* <h2 className="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
                 <SunIcon className="h-5 w-5 flex-none" />
                 <span className="ml-2">Experience</span>
-              </h2>
-              {settings?.resume && <Resume resume={settings.resume} />}
-              {settings?.education && <Education education={settings.education} />}
+              </h2> */}
+              {/* {settings?.resume && <Resume resume={settings.resume} />} */}
+              {/* {settings?.education && <Education education={settings.education} />} */}
               {/* <Newsletter /> */}
             </div>
           </aside>
@@ -82,9 +82,17 @@ export default async function About() {
               // );
             })}
           </div>
+          
+          {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
+            <CardView /> 
+          </div>  */}
+
         </div>
         
       </div>
+
+      
+
       <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
         {/* <WobbleCardDemo />      */}
       </div>
