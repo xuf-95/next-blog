@@ -7,6 +7,8 @@ import { SparkleIcon, UserSecurityIcon } from '~/assets'
 // import { PeekabooLink } from '~/components/links/PeekabooLink'
 import { SocialLink } from '~/components/links/SocialLink'
 
+import { Avatar } from '~/components/Avatar'
+
 // function Developer() {
 //   return (
 //     <span className="group">
@@ -37,14 +39,14 @@ export function Headline() {
     <div className="flex flex-col gap-4">
       <div className="flex flex-col">
         {/* 标题部分 */}
-        <motion.h1 
-          className="text-4xl md:text-5xl font-bold"
+        <motion.h1
+          className="text-2xl md:text-3xl font-bold"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           <motion.span className="inline-block">Hey there, I&apos;m </motion.span>
-          <span className="block h-2" />
+          {/* <span className="block h-2" /> */}
           <motion.span 
             className="inline-block ml-2 bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-500 text-transparent bg-clip-text"
             initial={{ opacity: 0 }}

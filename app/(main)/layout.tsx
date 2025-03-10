@@ -10,7 +10,6 @@ import { QueryProvider } from '~/app/QueryProvider'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-import Snowfall from '~/components/ui/Snowfall'
 
 export default function BlogLayout({
   children,
@@ -38,10 +37,6 @@ export default function BlogLayout({
           </Suspense>
         </div>
       </QueryProvider>
-
-      {/* <div className="relative">
-        <Snowfall />
-      </div> */}
 
       <Analytics />
     </>

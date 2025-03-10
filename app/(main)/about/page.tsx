@@ -2,8 +2,12 @@ import React from 'react'
 
 import { Container } from '~/components/ui/Container'
 import { aboutMeHeadline, aboutParagraphs } from '~/config/infoConfig'
-import portraitImage from '~/assets/PortraitA.png'
+import portraitImage from '~/assets/PortraitAbout.jpg'
 import Image from 'next/image'
+import { type Metadata } from 'next'
+import { getSettings } from '~/sanity/queries'
+import CardView from '../projects/Card'
+
 import  SocialLink  from '~/components/links/iconLinks'
 import { motion } from 'framer-motion'
 import { Newsletter } from '~/app/(main)/Newsletter'
@@ -12,11 +16,7 @@ import { Education } from '~/app/(main)/Education'
 import settings from '~/.eslintrc.cjs'
 import { SunIcon } from '~/assets'
 
-import { type Metadata } from 'next'
 
-import { getSettings } from '~/sanity/queries'
-
-import CardView from '../projects/Card'
 export const metadata: Metadata = {
   title: 'About',
   description:
@@ -57,9 +57,6 @@ export default async function About() {
             {aboutMeHeadline}
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            {/* {aboutParagraphs.map((paragraph, index) => (
-               <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
-            ))} */}
             {aboutParagraphs.map((section, index) => {
               // 检查类型，如果是对象则渲染标题和内容
               if (typeof section === "object" && section.title) {
@@ -72,30 +69,15 @@ export default async function About() {
                   </div>
                 );
               }
-
-              // // 否则直接渲染段落
-              // return (
-              //   <p
-              //     key={index}
-              //     dangerouslySetInnerHTML={{ __html: section }}
-              //   />
-              // );
             })}
           </div>
-          
-          {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
-            <CardView /> 
-          </div>  */}
-
-        </div>
-        
+        </div>        
       </div>
 
-      
-
-      <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
-        {/* <WobbleCardDemo />      */}
-      </div>
+      {/* <WobbleCardDemo />      */}
+      {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
+        <CardView /> 
+      </div>  */}
       
     </Container>
   )

@@ -5,6 +5,7 @@ import { RichLink } from '~/components/links/RichLink'
 import { Container } from '~/components/ui/Container'
 
 import CardView from '../projects/Card'
+import './stack.css'
 
 const title = 'AMA 一对一咨询'
 const description =
@@ -28,9 +29,9 @@ export default function AskMeAnythingPage() {
   return (
     <Container className="mt-16 sm:mt-24">
       <header className="max-w-2xl">
-        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+        <h3 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
           Fouces WC
-        </h1>
+        </h3>
         {/* <p className="my-6 text-base text-zinc-600 dark:text-zinc-400">
           <Balancer>入职大风线 </Balancer>
         </p> */}
@@ -39,6 +40,7 @@ export default function AskMeAnythingPage() {
       <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
           <CardView /> 
       </div> 
+      
     </Container>
   )
 }

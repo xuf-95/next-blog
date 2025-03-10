@@ -4,7 +4,7 @@ export * from './projects'
 export const email = 'sherlock.xpf@gmail.com'
 
 // about page
-export const aboutMeHeadline = "Welcome!"
+export const aboutMeHeadline = "Hi ~"
 export const githubUsername = 'xuf-95'
 
 type AboutSection = 
@@ -15,20 +15,20 @@ type AboutSection =
     };
 
 export const aboutParagraphs : AboutSection[] = [
-    "<strong>I'm XuFei, a bigdata engineer based in Hangzhou, China.</strong>",
+    // "<strong>I'm XuFei, a bigdata engineer based in Hangzhou, China.</strong>",
     {
-        title: "Now...",
-        content: "Offline and digital nomads keep working with each other and are exploring more possibilities for the combination of AI and data engineering",
+        title: " ",
+        content: "Offline and digital nomads keep working with each other and are exploring more possibilities for the combination of AI and data engineering. From data engineering related projects in Hangzhou, the main obligations include overseas data delivery, government cloud projects and data governance. "
+        
     },
     {
-        title: "A while ago...", // 没有标题时设置为 null
+        title: " ", // 没有标题时设置为 null
         content: "From data engineering related projects in Hangzhou, the main obligations include overseas data delivery, government cloud projects and data governance.",
     },
     {
-        title: "From the start...", 
+        title: " ", 
         content: "Grew up in HeBei. Always curious, eventually skipped two years of high school to learn on my own..",
     },
-
 ]
 
 

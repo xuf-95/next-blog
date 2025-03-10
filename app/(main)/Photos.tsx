@@ -35,7 +35,7 @@ export function Photos({ photos }: { photos: string[] }) {
 
   return (
     <motion.div
-      className="mt-16 sm:mt-20"
+      className="mt-16 sm:mt-12"
       initial={{ opacity: 0, scale: 0.925, y: 16 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ delay: 0.5, type: 'spring' }}
