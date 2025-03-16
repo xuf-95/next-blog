@@ -23,7 +23,7 @@ export const aboutParagraphs : AboutSection[] = [
     },
     {
         title: " ", // 没有标题时设置为 null
-        content: "From data engineering related projects in Shanghai, the main obligations include overseas data delivery, government cloud projects and data governance.",
+        content: "From data architect related projects in Shanghai, the main obligations include overseas data delivery, government cloud projects and data governance.",
     },
     {
         title: " ", 

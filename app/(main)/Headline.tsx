@@ -72,7 +72,7 @@ export function Headline() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
         >
-          <b>Data engineer, digital nomad explorer.Currently I am working on a data cloud delivery related project in Shanghai</b>
+          <b>Data architect, digital nomad explorer.Currently I am working on a data cloud delivery related project in Shanghai</b>
         </motion.p>
         
         <motion.p 
