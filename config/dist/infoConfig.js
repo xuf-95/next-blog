@@ -20,11 +20,11 @@ exports.aboutParagraphs = [
     // "<strong>I'm XuFei, a bigdata engineer based in Hangzhou, China.</strong>",
     {
         title: " ",
-        content: "Offline and digital nomads keep working with each other and are exploring more possibilities for the combination of AI and data engineering.  "
+        content: "Offline and digital nomads keep working with each other and are exploring more possibilities for the combination of AI and data engineering."
     },
     {
         title: " ",
-        content: "From data engineering related projects in Hangzhou, the main obligations include overseas data delivery, government cloud projects and data governance."
+        content: "From data engineering related projects in Shanghai, the main obligations include overseas data delivery, government cloud projects and data governance."
     },
     {
         title: " ",

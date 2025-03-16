@@ -20,7 +20,7 @@ import { SunIcon } from '~/assets'
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'I’m XuFei. I live in Hangzhou City, where I design the future.',
+    'I’m XuFei. I live in Hangzhou City, where I design the future. Currently in the stage of personal career exploration, seeking cooperation',
 }
 
 
