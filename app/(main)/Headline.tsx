@@ -81,8 +81,8 @@ export function Headline() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.5 }}
         >
-          <b>Enjoy cycling, coffee & coding,</b>
-          <Designer />
+          <b>Enjoy cycling, coffee & coding, build in public</b>
+          {/* <Designer /> */}
           <b>, DATA + AI</b>
         </motion.p>
 
