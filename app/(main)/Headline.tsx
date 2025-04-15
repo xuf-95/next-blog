@@ -103,16 +103,6 @@ export function Headline() {
           aria-label="推特"
           platform="x"
         />
-        {/* <SocialLink
-          href="https://cali.so/youtube"
-          aria-label="我的 YouTube"
-          platform="youtube"
-        /> */}
-        {/* <SocialLink
-          href="https://cali.so/bilibili"
-          aria-label="我的 Bilibili"
-          platform="bilibili"
-        /> */}
         <SocialLink
           href="https://github.com/xuf-95"
           aria-label="GitHub"
@@ -123,13 +113,8 @@ export function Headline() {
           aria-label="Telegram"
           platform="telegram"
         />
-        {/* <SocialLink
-          href="https://www.instagram.com/xufei_sherlock/"
-          aria-label="Instagram"
-          platform="instagram"
-        /> */}
         <SocialLink
-          href="https://www.instagram.com/xufei_sherlock/"
+          href="https://xufei.biz/"
           aria-label="wiki"
           platform="ufo"
         />

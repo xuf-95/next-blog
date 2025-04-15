@@ -6,6 +6,15 @@ import CardView from './Card'
 
 import { projectHeadLine, projectIntro, projects, githubProjects } from '~/config/infoConfig'
 
+import BlurFade from "~/components/magicui/blur-fade";
+import { ProjectCard } from "~/app/(main)/projects/project-card";
+import { Badge } from "~/components/ui/badge";
+import { DATA } from "~/data/resume";
+import Link from "next/link";
+import Markdown from "react-markdown";
+
+const BLUR_FADE_DELAY = 0.04;
+
 // import OrbitingCircles from '~/app/(main)/OrbitingCirclesView'
 
 // import { ProjectCard } from '~/components/projects/ProjectCard'
@@ -32,7 +41,7 @@ export const metadata = {
 
 export default function ProjectsPage() {
   return (
-    <Container className="mt-16 sm:mt-32">
+    <Container className="mt-16 sm:mt-24">
       <header className="max-w-2xl">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
           Projects
@@ -45,9 +54,31 @@ export default function ProjectsPage() {
           <CustomIcon name='coffee' size={28}/>
             Work Projects
        </h2> */}
-      <div className="mt-8 sm:mt-10">
+      {/* <div className="mt-8 sm:mt-10">
         <Projects />
-      </div>
+      </div> */}
+
+
+      <div className="mt-8 sm:mt-10 grid grid-cols-1 gap-3 sm:grid-cols-3 max-w-[1200px] mx-auto">
+            {DATA.projects.map((project, id) => (
+              <BlurFade
+                key={project.title}
+                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+              >
+                <ProjectCard
+                  href={project.href}
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  dates={project.dates}
+                  tags={project.technologies}
+                  image={project.image}
+                  video={project.video}
+                  links={project.links}
+                />
+              </BlurFade>
+            ))}
+          </div>
 
       {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
           <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
