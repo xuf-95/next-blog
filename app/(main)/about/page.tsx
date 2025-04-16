@@ -8,6 +8,11 @@ import { type Metadata } from 'next'
 import { getSettings } from '~/sanity/queries'
 import CardView from '../projects/Card'
 
+import BlurFade from "~/components/magicui/blur-fade";
+import { Badge } from "~/components/ui/badge";
+import { DATA } from "~/data/resume";
+import { ResumeCard } from "~/components/resume-card";
+
 import  SocialLink  from '~/components/links/iconLinks'
 import { motion } from 'framer-motion'
 import { Newsletter } from '~/app/(main)/Newsletter'
@@ -15,6 +20,9 @@ import { Resume } from '~/app/(main)/Resume'
 import { Education } from '~/app/(main)/Education'
 import settings from '~/.eslintrc.cjs'
 import { SunIcon } from '~/assets'
+
+
+const BLUR_FADE_DELAY = 0.04;
 
 
 export const metadata: Metadata = {
@@ -78,7 +86,56 @@ export default async function About() {
       {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
         <CardView /> 
       </div>  */}
-      
+
+<div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
+        {/* <OrbitingCircles /> */}
+        <section id="skills">
+          <div className="flex min-h-0 flex-col gap-y-3">
+            <BlurFade delay={BLUR_FADE_DELAY * 9}>
+              <h2 className="text-xl font-bold">Skills</h2>
+            </BlurFade>
+            <div className="flex flex-wrap gap-2">
+              {DATA.skills.map((skill, id) => (
+                <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                  <Badge 
+                    className="bg-white text-gray-800 shadow-sm border border-gray-200" // 新增样式
+                  >
+                    {skill}
+                  </Badge>
+                </BlurFade>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
+      <section id="work">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <h2 className="text-xl font-bold">Work Experience</h2>
+          </BlurFade>
+          {DATA.work.map((work, id) => (
+            <BlurFade
+              key={work.company}
+              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+            >
+              <ResumeCard
+                key={work.company}
+                logoUrl={work.logoUrl}
+                altText={work.company}
+                title={work.company}
+                subtitle={work.title}
+                href={work.href}
+                badges={work.badges}
+                period={`${work.start} - ${work.end ?? "Present"}`}
+                description={work.description}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+    </div>
     </Container>
   )
 }

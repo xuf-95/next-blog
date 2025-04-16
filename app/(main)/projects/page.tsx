@@ -65,7 +65,7 @@ export default function ProjectsPage() {
                 key={project.title}
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
               >
-                <ProjectCard
+                <ProjectCard 
                   href={project.href}
                   key={project.title}
                   title={project.title}
@@ -94,9 +94,6 @@ export default function ProjectsPage() {
             ))}
           </ul>
         </div> */}
-      {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40">  */}
-        {/* <OrbitingCircles /> */}
-      {/* </div> */}
 
       {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
           <CardView /> 

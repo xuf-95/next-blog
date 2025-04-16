@@ -180,120 +180,156 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
+      title: "Hunger Map",
+      href: "https://hungermap.wfp.org/",
       dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Number of countries with very high levels of hunger. Food Security. Population. No Data. People with insufficient food consumption. No Data. Nutrition.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "MaxCompute",
+        "DataWorks",
+        "OSS",
+        "RDS MySQL",
+        "DataV",
+        "DataFrame",
+        "Pandas",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://chatcollect.com",
+          type: "hungermap.wfp.org",
+          href: "https://hungermap.wfp.org/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      video: 
+       "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
+      title: "共富大脑",
+      href: "https://www.zjhy.gov.cn/art/2021/12/16/art_1634799_59036635.html",
       dates: "June 2023 - Present",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "XX市为实现市区人民的整体富裕，通过数字政府、数字经济将各个政务数据部门的数据、企业的数据以及整合第三方相关的数据，通过一站式的数据仓库，模型分析及指标系统的搭建，形成整个YY区政府的大脑系统。",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "MaxCompute",
+        "DataWorks",
+        "Python",
+        "RDS MySQL",
       ],
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "https://www.zjhy.gov.cn/art/2021/12/16/art_1634799_59036635.html",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
+        // {
+        //   type: "Source",
+        //   href: "https://github.com/magicuidesign/magicui",
+        //   icon: <Icons.github className="size-3" />,
+        // },
       ],
       image: "",
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
+      title: "CarsoSEARS",
+      href: "https://www.sears.com.mx/",
       dates: "April 2023 - September 2023",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "为美西SEARS构建线上系统，实现商品、订单、库存、采购、会员等多维度数据的统一管理和智能分析，支持日均百万级订单处理，为业务决策提供实时数据支支持，平台整体性能提升60%，数据分析效率提升90%",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "MaxCompute",
+        "Dataphin",
+        "RDS MySQL",
+        "QuickBI",
+        "Python",
+        "Pandas"
       ],
       links: [
         {
           type: "Website",
-          href: "https://llm.report",
+          href: "https://www.sears.com.mx/",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
+        // {
+        //   type: "Source",
+        //   href: "https://github.com/dillionverma/llm.report",
+        //   icon: <Icons.github className="size-3" />,
+        // },
       ],
       image: "",
       video: "https://cdn.llm.report/openai-demo.mp4",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
+      title: "e家富",
+      href: "http://zjpubservice.zjzwfw.gov.cn/jyxxgk/002002/002002004/20230522/75bda1b0-09fd-4769-8d8f-22891398d068.html",
       dates: "April 2023 - March 2024",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+        "项⽬基于“e 家富 ”数据仓，获取住房数据、新⽣⼉数据、⽣育保险数据、就诊结算数据、教育学籍数据等，进⾏⼆次加⼯处理，集成共富背景下各种类型家庭的算法识别和研判模型，智能识别不同类型共富家庭，辅助并推动以家庭为单位的财税政策体系落地",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "MaxCompute",
+        "DataWorks",
+        "Python",
+        "RDS MySQL",
+        "Log4j"
       ],
       links: [
         {
           type: "Website",
           href: "https://automatic.chat",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+    },
+
+    {
+      title: "HKExpress POC",
+      href: "https://www.hkexpress.com/en",
+      dates: "April 2023 - March 2024",
+      active: false,
+      description:
+        "香港快运航空针对现有历史数据和新增数据，通过阿里云平台实现价值数据的挖掘、数据仓库的分层规范设计、优化数据建模并最终在平台层实现数据监控预警",
+      technologies: [
+        "MaxCompute",
+        "DataWorks",
+        "Python",
+        "RDS MySQL",
+      ],
+      links: [
+        {
+          type: "hkexpress",
+          href: "https://www.hkexpress.com/en",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+    },
+
+    {
+      title: "Big Data Wiki",
+      href: "https://xufei.biz/",
+      dates: "April 2023 - March 2024",
+      active: false,
+      description:
+        "个人大数据生态Wiki笔记，大数据组件包括整个数据架构、数据集成、数据开发、数据建模、数据分析、数据标准、数据运维、数据什么周期等。编程开发：Python、Shell等",
+      technologies: [
+        "Quartz",
+        "Type Scripty",
+      ],
+      links: [
+        {
+          type: "xufei.wiki",
+          href: "https://xufei.wiki/en",
           icon: <Icons.globe className="size-3" />,
         },
       ],
