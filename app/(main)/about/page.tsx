@@ -81,15 +81,7 @@ export default async function About() {
           </div>
         </div>        
       </div>
-
-      {/* <WobbleCardDemo />      */}
-      {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
-        <CardView /> 
-      </div>  */}
-
-<div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
-        {/* <OrbitingCircles /> */}
-        <section id="skills">
+      <section id="skills">
           <div className="flex min-h-0 flex-col gap-y-3">
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
               <h2 className="text-xl font-bold">Skills</h2>
@@ -107,7 +99,16 @@ export default async function About() {
             </div>
           </div>
         </section>
-      </div>
+      
+      {/* <WobbleCardDemo />      */}
+      {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
+        <CardView /> 
+      </div>  */}
+
+      {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
+        {/* <OrbitingCircles />  </div> */} 
+        
+      
 
       <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
       <section id="work">

@@ -203,8 +203,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: 
-       "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      video: "https://pub-075a31fca232457a9c7571729dc03ae7.r2.dev/hunger-map.mp4",
     },
     {
       title: "共富大脑",
