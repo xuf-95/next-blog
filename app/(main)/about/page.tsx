@@ -110,7 +110,7 @@ export default async function About() {
         
       
 
-      <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
+      {/* <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 border-t border-zinc-100 py-8 dark:border-zinc-700/40"> 
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -136,7 +136,7 @@ export default async function About() {
           ))}
         </div>
       </section>
-    </div>
+    </div> */}
     </Container>
   )
 }
