@@ -230,8 +230,8 @@ export const DATA = {
         //   icon: <Icons.github className="size-3" />,
         // },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/projects/gfgf.png",
+      video: "",
     },
     {
       title: "CarsoSEARS",
@@ -254,17 +254,12 @@ export const DATA = {
           href: "https://www.sears.com.mx/",
           icon: <Icons.globe className="size-3" />,
         },
-        // {
-        //   type: "Source",
-        //   href: "https://github.com/dillionverma/llm.report",
-        //   icon: <Icons.github className="size-3" />,
-        // },
       ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      image: "/projects/pro-carso.png",
+      video: "",
     },
     {
-      title: "e家富",
+      title: "E家富",
       href: "http://zjpubservice.zjzwfw.gov.cn/jyxxgk/002002/002002004/20230522/75bda1b0-09fd-4769-8d8f-22891398d068.html",
       dates: "April 2023 - March 2024",
       active: true,
@@ -284,9 +279,9 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/projects/ejf.png",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "",
     },
 
     {
@@ -309,9 +304,9 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/projects/hkexpress.png",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "",
     },
 
     {
@@ -332,9 +327,9 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/wiki.png",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "",
     },
   ],
   hackathons: [
