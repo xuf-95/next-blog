@@ -14,7 +14,9 @@ import {
   TwitterIcon,
   YouTubeIcon,
   XIcon,
-  UFOIcon
+  UFOIcon,
+  ExternalLinkIcon
+  
 } from '~/assets'
 import { Tooltip } from '~/components/ui/Tooltip'
 
@@ -29,6 +31,7 @@ type Platform =
   | 'mail'
   | 'rss'
   | 'ufo'
+  | 'externalLink'
 type PlatformInfo = {
   icon: IconType
   platform: Platform
@@ -61,7 +64,8 @@ const iconMapper: { [key: string]: PlatformInfo } = {
     platform: 'bilibili',
     label: '哔哩哔哩',
   },
-  '(?:xufei.biz:)': { icon: UFOIcon, platform: 'ufo', label: 'wiki' },
+  // '(?:xufei.biz:)': { icon: UFOIcon, platform: 'ufo', label: 'wiki' },
+  '(?:xufei.biz:)': { icon: ExternalLinkIcon, platform: 'externalLink', label: 'wiki' },
   '(?:mailto:)': { icon: MailIcon, platform: 'mail', label: '邮箱地址' },
   '(?:feed.xml)': { icon: AtomIcon, platform: 'rss', label: 'RSS 订阅' },
 }

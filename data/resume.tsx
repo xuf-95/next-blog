@@ -216,7 +216,7 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
+          type: "gfdn",
           href: "https://www.zjhy.gov.cn/art/2021/12/16/art_1634799_59036635.html",
           icon: <Icons.globe className="size-3" />,
         },
@@ -246,7 +246,7 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
+          type: "sears.com.mx",
           href: "https://www.sears.com.mx/",
           icon: <Icons.globe className="size-3" />,
         },
@@ -270,7 +270,7 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
+          type: "ejf",
           href: "https://automatic.chat",
           icon: <Icons.globe className="size-3" />,
         },

@@ -100,8 +100,8 @@ export function Headline() {
       >
         <SocialLink
           href="https://x.com/pfx95"
-          aria-label="推特"
-          platform="x"
+          aria-label="twitter"
+          platform="twitter"
         />
         <SocialLink
           href="https://github.com/xuf-95"
@@ -116,7 +116,7 @@ export function Headline() {
         <SocialLink
           href="https://xufei.biz/"
           aria-label="wiki"
-          platform="ufo"
+          platform="externalLink"
         />
         <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" />
         <SocialLink
