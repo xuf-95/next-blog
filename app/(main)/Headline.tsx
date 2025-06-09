@@ -9,16 +9,6 @@ import { SocialLink } from '~/components/links/SocialLink'
 
 import { Avatar } from '~/components/Avatar'
 
-// function Developer() {
-//   return (
-//     <span className="group">
-//       <span className="font-mono">&lt;</span>开发者
-//       <span className="font-mono">/&gt;</span>
-//       <span className="invisible inline-flex text-zinc-300 before:content-['|'] group-hover:visible group-hover:animate-typing dark:text-zinc-500" />
-//     </span>
-//   )
-// }
-
 function Designer() {
   return (
     <span className="group relative bg-black/5 p-1 dark:bg-white/5">
