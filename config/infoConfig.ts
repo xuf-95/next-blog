@@ -53,20 +53,10 @@ export const socialLinks: Array<SocialLinkType> = [
     href: 'https://bsky.app/profile/pfxu.bsky.social'
 },
 {
-    name: 'Jike',
-    icon: 'pill',
-    href: 'https://okjk.co/P7c1zU'
-},
-{
     name: 'Github',
     icon: 'github',
     href: 'https://github.com/xuf-95'
 },
-// {
-//     name: 'Wechat',
-//     icon: 'wechat',
-//     href: 'https://mp.weixin.qq.com/s/DxnRgqNfgzXIhqj6w_x0dQ'
-// },
 {
     name: 'Discord',
     icon: 'discord',

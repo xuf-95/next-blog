@@ -5,5 +5,5 @@ export const emailConfig = {
   baseUrl:
     env.VERCEL_ENV === 'production'
       ? env.NEXT_PUBLIC_SITE_URL
-      : 'http://localhost:3000',
+      : 'http://localhost:3080',
 }

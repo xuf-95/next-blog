@@ -15,8 +15,10 @@ import {
   YouTubeIcon,
   XIcon,
   UFOIcon,
-  ExternalLinkIcon
-  
+  ExternalLinkIcon,
+  KoFiIcon,
+  RssIcon,
+  InstagramIcon,
 } from '~/assets'
 import { Tooltip } from '~/components/ui/Tooltip'
 
@@ -32,6 +34,8 @@ type Platform =
   | 'rss'
   | 'ufo'
   | 'externalLink'
+  | 'ko-fi'
+  | 'instagram'
 type PlatformInfo = {
   icon: IconType
   platform: Platform
@@ -67,7 +71,9 @@ const iconMapper: { [key: string]: PlatformInfo } = {
   // '(?:xufei.biz:)': { icon: UFOIcon, platform: 'ufo', label: 'wiki' },
   '(?:xufei.biz:)': { icon: ExternalLinkIcon, platform: 'externalLink', label: 'wiki' },
   '(?:mailto:)': { icon: MailIcon, platform: 'mail', label: '邮箱地址' },
-  '(?:feed.xml)': { icon: AtomIcon, platform: 'rss', label: 'RSS 订阅' },
+  '(?:feed.xml)': { icon: RssIcon, platform: 'rss', label: 'RSS 订阅' },
+  '(?:ko-fi.com)': { icon: KoFiIcon, platform: 'ko-fi', label: 'Ko-fi' },
+  '(?:instagram.com)': { icon: InstagramIcon, platform: 'instagram', label: 'Instagram' },
 }
 
 function getIconForUrl(url: string): PlatformInfo | undefined {

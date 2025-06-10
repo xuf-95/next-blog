@@ -104,17 +104,33 @@ export function Headline() {
           platform="telegram"
         />
         <SocialLink
+          href="https://www.instagram.com/xuf_95"
+          aria-label="Instagram"
+          platform="instagram"
+        />
+        <SocialLink
           href="https://xufei.biz/"
           aria-label="wiki"
           platform="externalLink"
         />
-        <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" />
+        <SocialLink 
+          href="/feed.xml" 
+          platform="rss" 
+          aria-label="RSS 订阅" 
+        />
         <SocialLink
           href="sherlock.xpf@gmail.com"
           aria-label="我的邮箱"
           platform="mail"
         />
+        <SocialLink
+          href="https://ko-fi.com/xuf"
+          aria-label="Ko-fi"
+          platform="ko-fi"
+        />
+
       </motion.div>
+
       </div>
     </div>
   );
