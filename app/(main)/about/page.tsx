@@ -24,14 +24,6 @@ import { SunIcon } from '~/assets'
 
 const BLUR_FADE_DELAY = 0.04;
 
-
-export const metadata: Metadata = {
-  title: 'About',
-  description:
-    'I’m XuFei. I live in Hangzhou City, where I design the future. Currently in the stage of personal career exploration, seeking cooperation',
-}
-
-
 export default async function About() {
   const aboutParagraphsSafe = aboutParagraphs || [];
   const settings = await getSettings()
