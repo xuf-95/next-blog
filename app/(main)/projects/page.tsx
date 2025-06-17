@@ -4,7 +4,6 @@ import { Projects } from '~/app/(main)/projects/Projects'
 import { Container } from '~/components/ui/Container'
 import CardView from './Card'
 
-import { projectHeadLine, projectIntro, projects, githubProjects } from '~/config/infoConfig'
 
 import BlurFade from "~/components/magicui/blur-fade";
 import { ProjectCard } from "~/app/(main)/projects/project-card";
@@ -15,12 +14,6 @@ import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
 
-// import OrbitingCircles from '~/app/(main)/OrbitingCirclesView'
-
-// import { ProjectCard } from '~/components/projects/ProjectCard'
-// import { GithubProjectCard } from '~/components/projects/GithubProjectCard'
-// import { CustomIcon } from '~/components/CustomIcon'
-// import GitHubSnake from '~/components/home/GitHubSnake'
 
 const title = '我的项目'
 const description =
