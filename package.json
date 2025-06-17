@@ -59,6 +59,7 @@
     "clsx": "^2.1.1",
     "contentlayer": "^0.3.4",
     "contentlayer2": "^0.5.3",
+    "date-fns": "^4.1.0",
     "dayjs": "^1.11.10",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.1",

@@ -183,8 +183,8 @@ export async function Footer() {
                 &copy; {new Date().getFullYear()} xufei & 许飛. 网站基于 Cali Castle：
                 <PeekabooLink href="https://github.com/CaliCastle/cali.so">
                   GitHub
-                </PeekabooLink>
-              </p>
+                </PeekabooLink> 
+              </p> 
               <Links />
             </div>
 
