@@ -13,6 +13,8 @@ import { env } from '~/env.mjs'
 import { prettifyNumber } from '~/lib/math'
 import { redis } from '~/lib/redis'
 import { Newsletter } from './Newsletter'
+import { SocialLink } from '~/components/links/SocialLink'
+import { motion } from 'framer-motion'
 
 function NavLink({
   href,
@@ -144,7 +146,7 @@ export async function Footer() {
       <Container.Outer>
         <div className="border-t border-zinc-100 pb-16 pt-10 dark:border-zinc-700/40">
           <Container.Inner>
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-4">
+            <div className="grid grid-cols-3 gap-5 sm:grid-cols-6">
               <div>
                 <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
                   GENERAL
@@ -171,8 +173,21 @@ export async function Footer() {
                 </ul>
               </div>
 
+              <div>
+                <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
+                  EXTRA
+                </h2>
+                <ul className="space-y-2">
+                  <li><Link href="/uses" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Uses</b></Link></li>
+                  <li><Link href="/blog/Snippt" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Snippt</b></Link></li>
+                  {/* <li><Link href="/hire-me" className="text-lime-400 hover:text-lime-600 transition-colors">Hire me</Link></li> */}
+                  <li><Link href="https://read.cv/xuf" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Books</b></Link></li>
+                  <li><Link href="/newsletter" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Movies</b></Link></li>
+                </ul>
+              </div>
+
               {/* Newsletter 组件占用两列 */}
-              <div className="sm:col-span-2">
+              <div className="col-span-3 sm:col-span-3 md:col-span-3">
                 <Newsletter subCount={`${subs?.subCount ?? '0'}`} />
               </div>
             </div>
@@ -187,7 +202,6 @@ export async function Footer() {
               </p> 
               <Links />
             </div>
-
             {/* <Container.Inner className="mt-6">
               <div className="flex flex-col items-center justify-start gap-2 sm:flex-row">
                 <React.Suspense>
