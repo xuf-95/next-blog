@@ -43,7 +43,7 @@ export function ProjectCard({
   return (
     <Card
       className={
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
+        "flex h-full flex-col overflow-hidden rounded-2xl border border-zinc-100 bg-white transition-all duration-300 ease-out hover:shadow-lg dark:border-zinc-700/40 dark:bg-zinc-800"
       }
     >
       <Link
@@ -70,14 +70,14 @@ export function ProjectCard({
           />
         )}
       </Link>
-      <CardHeader className="px-2">
+      <CardHeader className="px-2 pt-3">
         <div className="space-y-1">
-          <CardTitle className="mt-1 text-base">{title}</CardTitle>
-          <time className="font-sans text-xs">{dates}</time>
-          <div className="hidden font-sans text-xs underline print:visible">
+          <CardTitle className="mt-1 text-sm font-medium text-zinc-900 dark:text-zinc-100">{title}</CardTitle>
+          <time className="font-sans text-xs text-zinc-500/80 dark:text-zinc-400/80">{dates}</time>
+          <div className="hidden font-sans text-xs text-zinc-500 underline print:visible dark:text-zinc-400">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
-          <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+          <Markdown className="prose max-w-full text-pretty font-sans text-xs text-zinc-500 dark:prose-invert dark:text-zinc-400">
             {description}
           </Markdown>
         </div>
@@ -87,8 +87,7 @@ export function ProjectCard({
           <div className="mt-2 flex flex-wrap gap-1">
             {tags?.map((tag) => (
               <Badge
-                className="px-1 py-0 text-[10px]"
-                variant="secondary"
+                className="border border-zinc-100 bg-white px-1 py-0 text-[10px] text-zinc-900 dark:border-zinc-700/40 dark:bg-zinc-800 dark:text-zinc-100"
                 key={tag}
               >
                 {tag}
@@ -101,8 +100,16 @@ export function ProjectCard({
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
-              <Link href={link?.href} key={idx} target="_blank">
-                <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
+              <Link
+                href={link?.href}
+                key={idx}
+                target="_blank"
+                className="transition-colors hover:text-zinc-700 dark:hover:text-zinc-300"
+              >
+                <Badge
+                  key={idx}
+                  className="flex gap-2 border border-zinc-100 bg-white px-2 py-1 text-[10px] text-zinc-900 dark:border-zinc-700/40 dark:bg-zinc-800 dark:text-zinc-100"
+                >
                   {link.icon}
                   {link.type}
                 </Badge>

@@ -178,11 +178,11 @@ export async function Footer() {
                   EXTRA
                 </h2>
                 <ul className="space-y-2">
-                  <li><Link href="/uses" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Uses</b></Link></li>
-                  <li><Link href="/blog/Snippt" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Snippt</b></Link></li>
-                  {/* <li><Link href="/hire-me" className="text-lime-400 hover:text-lime-600 transition-colors">Hire me</Link></li> */}
-                  <li><Link href="https://read.cv/xuf" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Books</b></Link></li>
-                  <li><Link href="/newsletter" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Movies</b></Link></li>
+                  <li><Link href="/uses" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"><b>Uses</b></Link></li>
+                  <li><Link href="/blog/Snippt" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"><b>Snippt</b></Link></li>
+                  {/* <li><Link href="/hire-me" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">Hire me</Link></li> */}
+                  <li><Link href="https://read.cv/xuf" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"><b>Books</b></Link></li>
+                  <li><Link href="/newsletter" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"><b>Movies</b></Link></li>
                 </ul>
               </div>
 

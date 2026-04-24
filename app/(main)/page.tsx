@@ -58,8 +58,8 @@ export default async function BlogHomePage() {
               <div className="flex flex-wrap gap-2">
                 {DATA.skills.map((skill, id) => (
                   <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                    <Badge 
-                      className="bg-white text-gray-800 shadow-sm border border-gray-200" // 新增样式
+                    <Badge
+                      className="border border-zinc-100 bg-white text-zinc-900 shadow-sm dark:border-zinc-700/40 dark:bg-zinc-800 dark:text-zinc-100"
                     >
                       {skill}
                     </Badge>
