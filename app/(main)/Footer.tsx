@@ -152,11 +152,11 @@ export async function Footer() {
                   GENERAL
                 </h2>
                 <ul className="space-y-2">
-                  <li><Link href="/" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Home</b></Link></li>
-                  <li><Link href="/about" className="text-lime-400 hover:text-lime-600 transition-colors"><b>About</b></Link></li>
-                  <li><Link href="/blog" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Blogs</b></Link></li>
-                  <li><Link href="/projects" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Projects</b></Link></li>
-                  {/* <li><Link href="/snippets" className="text-lime-400 hover:text-lime-600 transition-colors">Snippets</Link></li> */}
+                  <li><Link href="/" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"><b>Home</b></Link></li>
+                  <li><Link href="/about" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"><b>About</b></Link></li>
+                  <li><Link href="/blog" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"><b>Blogs</b></Link></li>
+                  <li><Link href="/projects" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"><b>Projects</b></Link></li>
+                  {/* <li><Link href="/snippets" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">Snippets</Link></li> */}
                 </ul>
               </div>
 
@@ -165,11 +165,11 @@ export async function Footer() {
                   PUBLIC
                 </h2>
                 <ul className="space-y-2">
-                  <li><Link href="https://bento.me/xfei" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Bento</b></Link></li>
-                  <li><Link href="https://www.strava.com/athletes/94054931" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Strava</b></Link></li>
-                  {/* <li><Link href="/hire-me" className="text-lime-400 hover:text-lime-600 transition-colors">Hire me</Link></li> */}
-                  <li><Link href="https://read.cv/xuf" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Read CV</b></Link></li>
-                  <li><Link href="/newsletter" className="text-lime-400 hover:text-lime-600 transition-colors"><b>Newsletter</b></Link></li>
+                  <li><Link href="https://bento.me/xfei" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"><b>Bento</b></Link></li>
+                  <li><Link href="https://www.strava.com/athletes/94054931" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"><b>Strava</b></Link></li>
+                  {/* <li><Link href="/hire-me" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">Hire me</Link></li> */}
+                  <li><Link href="https://read.cv/xuf" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"><b>Read CV</b></Link></li>
+                  <li><Link href="/newsletter" className="text-black dark:text-white hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"><b>Newsletter</b></Link></li>
                 </ul>
               </div>
 
