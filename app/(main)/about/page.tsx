@@ -6,7 +6,6 @@ import portraitImage from '~/assets/PortraitAbout.jpg'
 import Image from 'next/image'
 import { type Metadata } from 'next'
 import { getSettings } from '~/sanity/queries'
-import CardView from '../projects/Card'
 
 import BlurFade from "~/components/magicui/blur-fade";
 import { Badge } from "~/components/ui/badge";
