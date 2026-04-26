@@ -104,7 +104,7 @@ export async function Footer() {
             </div>
 
             {/* 底部版权信息和链接 */}
-            <div className="mt-16 flex flex-col items-center justify-between gap-6 sm:flex-row">
+            {/* <div className="mt-8 flex flex-col items-center justify-between gap-6 sm:flex-row">
               <p className="text-sm text-zinc-500/80 dark:text-zinc-400/80">
                 &copy; {new Date().getFullYear()} xufei & 许飛. 网站基于 Cali Castle：
                 <PeekabooLink href="https://github.com/CaliCastle/cali.so">
@@ -112,7 +112,7 @@ export async function Footer() {
                 </PeekabooLink> 
               </p> 
               <Links />
-            </div>
+            </div> */}
           </Container.Inner>
         </div>
       </Container.Outer>
