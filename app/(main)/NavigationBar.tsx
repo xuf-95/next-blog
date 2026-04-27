@@ -25,8 +25,8 @@ function NavItem({
         className={clsxm(
           'relative block whitespace-nowrap px-3 py-2 transition',
           isActive
-            ? 'text-lime-600 dark:text-lime-400'
-            : 'hover:text-lime-600 dark:hover:text-lime-400'
+            ? 'text-gray-600 dark:text-gray-400'
+            : 'hover:text-gray-600 dark:hover:text-gray-400'
         )}
       >
         {children}
